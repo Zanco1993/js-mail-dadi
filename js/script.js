@@ -3,13 +3,13 @@
 // controlla che sia nella lista di chi può accedere, 
 // stampa un messaggio appropriato sull’esito del controllo.
 
-const listMail = ['Pino@gmail.com', 'Mario@gmail.com', 'Fabio@gmail.com'];
+const listMail = ['Pino@gmail.com', 'Pino@yahoo.it', 'Mario@gmail.com', 'Fabio@gmail.com'];
 let flag = false;
 
 let userMail = prompt("Inserisci la tua mail");
 
 for(let i = 0; i < listMail.length; i++) {
-    if (userMail === listMail[i]) {
+    if ((userMail.toLowerCase) === (listMail[i].toLowerCase)) {
         flag = true;
     }
 }
