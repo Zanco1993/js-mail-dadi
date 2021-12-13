@@ -39,6 +39,9 @@ for(i = 0; i < 6; i++){
     let randomHuman = Math.floor(Math.random() * (max - min + 1)) + min;
     console.log(`Il numero utente estratto è ${randomHuman}`);
 
+    // inizio con la condizione eccezionale del pareggio per poi successivamente
+    // per poi proseguire con il resto 
+
     if (randomMachine === randomHuman) {
         console.log(`La partita è in pareggio!`);
     } else if (randomHuman > randomMachine) {
